@@ -1,5 +1,41 @@
 alert("hola a todos");
 
+
+let valorIngresado = parseInt(prompt("ingrese el monto del dinero a retirar:"));
+
+let valorDevuelto = 0;
+
+const cantidadBilletes = 100;
+
+const valorBillete = 1;
+
+for (let i = 1; i <= cantidadBilletes; i++) {
+    if (valorDevuelto < valorIngresado) {
+        valorDevuelto = valorDevuelto + valorBillete
+    } else {
+        break;
+    }
+}
+
+if (valorDevuelto == valorIngresado) {
+    alert("El cajero ha devuelto el dinero")
+} else {
+    alert("El cajero no cuenta con plata suficiente")
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*let nombre = "Dalmiro"; 
 let apellido = "FUnes";
 var edad= "19";
@@ -24,20 +60,28 @@ let apellido = prompt("ingrese su apellido":);
 alert("nombre: " + nombreingresado + "  " + apellido);*/
 
 
-console.log("inicio");
+//console.log("inicio");
 
-let i;
+//let i;
 
 //for (let  i= 0;  i<=10;  i=++) {
     //alert("hola a todos! #" + i;);
     
 //}
 
-/*let valoringresado = parseInt(prompt("ingrese su numero;"));
-
-for (let i=1;  i<=10; i++) {
-    let resultado = valoringresado * i;
-    alert(valoringresado + " x " + 1 + " = " + resultado);
-}*/
 
 
+/*let edad = parseInt (prompt("cual es su edad"));
+console.log(edad);
+console.log(typeof edad);
+
+if (edad >= 18) {
+    alert("podes tomar alcohol")
+} else{
+    alert("prohibido no podes")
+} */
+
+
+    
+
+    
