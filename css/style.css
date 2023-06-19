@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./imagenes/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor {
+    margin: 50px 0;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.input {
+    border: none;
+    margin: 20px 0;
+    border-radius: 7px;
+    padding: 10px 15px;
+    outline: none;
+    background-color: white;
+}
+
+.boton {
+    border: none;
+    background-color: black;
+    color: white;
+    width: max-content;
+    padding: 5px 8px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#error {
+    color: red;
+    display: none;
+}
+
+.billetes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagenBillete {
+    height: 50px;
+    margin: 10px 16px;
+}
