@@ -1,0 +1,8 @@
+[
+  { "valor": 100, "cantidad": 50, "imagen": "100.png" },
+  { "valor": 50, "cantidad": 50, "imagen": "50.png" },
+  { "valor": 20, "cantidad": 50, "imagen": "20.png" },
+  { "valor": 10, "cantidad": 50, "imagen": "10.png" },
+  { "valor": 5, "cantidad": 50, "imagen": "5.png" },
+  { "valor": 1, "cantidad": 50, "imagen": "1.png" }
+]

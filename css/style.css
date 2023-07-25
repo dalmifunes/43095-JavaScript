@@ -45,9 +45,13 @@ body {
     cursor: pointer;
 }
 
-#error {
+.error {
     color: red;
-    display: none;
+    margin-top: 20px;
+}
+
+.white {
+    color: white;
 }
 
 .billetes {
@@ -59,4 +63,8 @@ body {
 .imagenBillete {
     height: 50px;
     margin: 10px 16px;
+}
+
+.hidden {
+    display: none;
 }

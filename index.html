@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cajero automatico</title>
+    <title>Document</title>
+    <style>
+        .fondo {
+            background-color: blue
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="fondo">
+    <div class="fondo" id="root">
         <div id="sesion" class="contenedor">
             <h1>Iniciar sesión</h1>
-            <input type="text" placeholder="Nombre de usuario" class="input" id="usuario">
-            <input type="password" placeholder="Contraseña" class="input" id="contraseña">
-            <button class="boton" onclick="iniciarSesion()">Enviar</button>
+            <form onsubmit="login(event)">
+                <input type="text" placeholder="Nombre de usuario" class="input" name="usuario">
+                <input type="password" placeholder="Contraseña" class="input" name="contraseña">
+                <button class="boton">Enviar</button>
+            </form>
         </div>
         <div id="cajero" class="contenedor">
-            <button class="boton" onclick="cerrarSesion()">Salir del cajero</button>
-            <h1>Ingrese el dinero que desea retirar</h1>
+            <button class="boton" onclick="logout()">Salir del cajero</button>
+            <h1 id="saldo"></h1>
+            <h2>Indique cuanto quiere retirar</h2>
             <input type="number" class="input" id="monto">
-            <p id="saldo"></p>
             <button class="boton" onclick="retirarDinero()">Retirar</button>
-            <p id="error"></p>
         </div>
-        <div class="billetes"></div>
     </div>
+    <!-- libreria para manejar hace pantallas de carga -->
+    <script src="https://unpkg.com/loadermest.js/dist/js/loadermest.min.js"></script>
+
     <script src="./main.js"></script>
 </body>
 </html>
