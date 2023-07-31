@@ -161,7 +161,7 @@ function mostrarDevuelto(devuelto) {
   for (billete of devuelto) {
     for (let i = 0; i < billete.cantidad; i++) {
       const image = document.createElement("img");
-      image.src = "imagenes/" + billete.imagen;
+      image.src = "./imagenes/" + billete.imagen;
       image.classList.add("imagenBillete")
       contenedorBilletes.append(image)
     }
